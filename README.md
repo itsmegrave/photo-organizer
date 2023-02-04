@@ -14,7 +14,7 @@ end
 For example, given a string:
 
 ```text
-"photo.jpg, Krakow, 2013-09-05 14:08:15
+photo.jpg, Krakow, 2013-09-05 14:08:15
 Mike.png, London, 2015-06-20 15:13:22
 myFriends.png, Krakow, 2013-09-05 14:07:13
 Eiffel.jpg, Florianopolis, 2015-07-23 08:03:02
@@ -28,7 +28,7 @@ c.jpg, Krakow, 2016-01-02 14:34:30
 d.jpg, Krakow, 2016-01-02 15:15:01
 e.png, Krakow, 2016-01-02 09:49:09
 f.png, Krakow, 2016-01-02 10:55:32
-g.jpg, Krakow, 2016-02-29 22:13:11"
+g.jpg, Krakow, 2016-02-29 22:13:11
 ```
 
 your function should return:
@@ -63,7 +63,6 @@ Assume that:
 * Each name of the city starts with a capital letters and is followed by lower case letters;
 * No two photos from the same location share the same date and time;
 * Each extension is `"jpg"`, `"png"` or `"jpeg"`. In your solution, focus on correctness.
-Collapse
 
 ## How to run
 * On the root of the project, run the following command: `ruby lib/program.rb <inputFile.txt>`«
