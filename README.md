@@ -65,4 +65,11 @@ Assume that:
 * Each extension is `"jpg"`, `"png"` or `"jpeg"`. In your solution, focus on correctness.
 
 ## How to run
-* On the root of the project, run the following command: `ruby lib/program.rb <inputFile.txt>`«
+
+* On the root of the project, run the following command: `ruby lib/photo_organizer.rb <inputFile.txt>`
+
+## Next Steps
+
+[ ] Break in smaller methods
+[ ] Create unit-tests
+[ ] Validade the input (based on `Assume that` rules)
