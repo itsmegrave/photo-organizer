@@ -3,8 +3,6 @@
 require 'time'
 
 class Photo
-  attr_accessor :formatted_photo_name
-
   def initialize(photo_data)
     @original_data = photo_data
   end
@@ -21,8 +19,12 @@ class Photo
     Time.new(parsed_data[2])
   end
 
-  def add_formatted_photo_name(index, zero_mask)
-    "#{city_name}#{index.to_s.rjust(zero_mask, '0')}#{extension}"
+  def new_name(index, zero_mask)
+    @new_name ||= "#{city_name}#{index.to_s.rjust(zero_mask, '0')}#{extension}"
+  end
+
+  def to_s
+    @new_name
   end
 
   private

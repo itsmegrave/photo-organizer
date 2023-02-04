@@ -25,7 +25,9 @@ class PhotoOrganizer
       ap digits_on_length
       index = photos_on_city.find_index(photo) + 1
 
-      photos_result << photo.add_formatted_photo_name(index, digits_on_length)
+      photo.new_name(index, digits_on_length)
+
+      photos_result << photo.to_s
     end
 
     puts photos_result.join("\n")
