@@ -70,6 +70,6 @@ Assume that:
 
 ## Next Steps
 
-[ ] Break in smaller methods
-[ ] Create unit-tests
-[ ] Validade the input (based on `Assume that` rules)
+* [ ] Break in smaller methods
+* [ ] Create unit-tests
+* [ ] Validate the input (based on `Assume that` rules)
