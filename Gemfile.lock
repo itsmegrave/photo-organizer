@@ -72,6 +72,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  benchmark
   debug
   rubocop
   solargraph
