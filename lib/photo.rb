@@ -22,7 +22,7 @@ class Photo
   end
 
   def add_formatted_photo_name(index, zero_mask)
-    "#{city_name}#{zero_mask}#{index}#{extension}"
+    "#{city_name}#{index.to_s.rjust(zero_mask, '0')}#{extension}"
   end
 
   private

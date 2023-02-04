@@ -17,23 +17,18 @@ class PhotoOrganizer
     end
     photos_by_city = photos.sort_by(&:timestamp).group_by(&:city_name)
 
+    puts photos_by_city['Krakow'].length
     photos_result = []
     photos.each do |photo|
       photos_on_city = photos_by_city[photo.city_name]
       digits_on_length = photos_on_city.length.to_s.length
+      ap digits_on_length
       index = photos_on_city.find_index(photo) + 1
 
-      photos_result << photo.add_formatted_photo_name(index, return_zeros(digits_on_length))
+      photos_result << photo.add_formatted_photo_name(index, digits_on_length)
     end
 
     puts photos_result.join("\n")
-  end
-
-  private
-
-  def return_zeros(size, mask = '')
-    return_zeros(size, mask << '0') unless mask.length == size - 1
-    mask
   end
 end
 
